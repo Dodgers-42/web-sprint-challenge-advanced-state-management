@@ -7,15 +7,15 @@ export const FETCH_SMURF_FAILURE = 'FETCH_SMURF_FAILURE';
 export const fetchSmurf = () => dispatch => {
     dispatch({ type: FETCH_SMURF_START });
     axios
-    .get('')
+    .get('/smurf')
     .then(res => {
         dispatch({ type: FETCH_SMURF_SUCCESS, payload: res.data.value});
     }).catch(err => dispatch({ type: FETCH_SMURF_FAILURE, payload: err.message }));
 }
 
 axios.post('/smurf', {
-    firstName: 'Fred',
-    lastName: 'Flintstone'
+    firstName: 'Papa',
+    lastName: 'Smurf'
   })
   .then(function (response) {
     console.log(response);

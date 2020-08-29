@@ -8,7 +8,13 @@ export const initialstate = {
     smurf: ''
 };
 
-const smurfReducer = (state=initialState, action) => {
+export const FETCHING_SMURF_START = 'FETCHING_SMURF_START';
+export const FETCHING_SMURF_SUCCESS = 'FETCHING_SMURF_SUCCESS';
+export const FETCHING_SMURF_FAILURE = 'FETCHING_SMURF_FAILURE';
+
+
+
+const smurfReducer = (state = initialState, action) => {
     switch (action.type) {
         case FETCH_SMURF_START:
             return {
@@ -18,7 +24,7 @@ const smurfReducer = (state=initialState, action) => {
         case FETCH_SMURF_SUCCESS:
             return {
                 ...state,
-                chuck: action.payload,
+                smurf: action.payload,
                 loading: false,
                 errors: ''
             };
