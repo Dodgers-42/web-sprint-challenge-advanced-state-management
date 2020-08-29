@@ -12,3 +12,14 @@ export const fetchSmurf = () => dispatch => {
         dispatch({ type: FETCH_SMURF_SUCCESS, payload: res.data.value});
     }).catch(err => dispatch({ type: FETCH_SMURF_FAILURE, payload: err.message }));
 }
+
+axios.post('/smurf', {
+    firstName: 'Fred',
+    lastName: 'Flintstone'
+  })
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });

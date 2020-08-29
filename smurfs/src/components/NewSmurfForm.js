@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react';
-// import { sendData } from '../actions'
+
 
 export default () => {
     const sendNewSmurf = useDispatch();
