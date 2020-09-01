@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react';
+import { connect } from 'react-redux';
 
 
 export default () => {
@@ -18,26 +19,32 @@ export default () => {
             setHeight(e.target.value);
         }
     }
+//import post function
+    const addNewSmurf = e => {
+        e.preventDefault();
+        let smurfObject = {
+            name: name,
+            age: age,
+            height: height + 'cm',
+            id: usedId + 1
 
-    // const addNewSmurf = e => {
-    //     e.preventDefault();
-    //     let smurfObject = {
-    //         name: name,
-    //         age: age,
-    //         height: height + 'cm',
-    //         id: usedId + 1
-
-    //     }
-    //     return sendNewSmurf(sendData(smurfObject));
-    // }
+        }
+        return sendNewSmurf(sendData(smurfObject));
+    }
 
     return (
         <div>
             <input type='type' name='name' onClick={handleChange} value={name} />
             <input type='number' name='age' onClick={handleChange} value={age} />
             <input type='number' name='height' onClick={handleChange} value={height} />
-            {/* <button onClick={addNewSmurf} > Add Smurf </button> */}
+            <button onClick={addNewSmurf} > Add Smurf </button>
         </div>
 
     );
 }
+
+const mapDispatchToProps = {
+    addSmurf
+}
+
+export default connect(null, mapDispatchToProps)(NewSmurfForm);
