@@ -9,7 +9,7 @@ const Village = props => {
 
     useEffect(()=>{
         props.getSmurf(id);
-    }, )
+    },)
 
     return (
         <div className="smurf-page">
