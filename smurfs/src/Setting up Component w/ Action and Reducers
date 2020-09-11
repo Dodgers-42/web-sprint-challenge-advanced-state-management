@@ -18,3 +18,45 @@ dispatch({type: FETCH_START})  dispatch({type: FETCH_SUCCESS, payload: res.data}
                                      dogs: actions.payload.dogs
                                      }
 
+
+
+
+
+Hey All, I wanted to share a list of Reddit subreddits I'm in that have helped me with Lambda and with seeing what the job market looks like and what people in the industry experience. I hope this helps some of you!
+JOB / INDUSTRY-RELATED
+CS Career Questions
+https://www.reddit.com/r/cscareerquestions/
+Digital Nomad
+https://www.reddit.com/r/digitalnomad/
+Experienced Devs
+https://www.reddit.com/r/ExperiencedDevs/
+Remote JS Jobs
+https://www.reddit.com/r/remotejs/
+-----
+CODING RELATED
+CSS
+https://www.reddit.com/r/css/
+Daily Programmer
+https://www.reddit.com/r/dailyprogrammer/
+Github
+https://www.reddit.com/r/github/
+HTML5
+https://www.reddit.com/r/html5/
+Javascript
+https://www.reddit.com/r/javascript/
+Learn Javascript
+https://www.reddit.com/r/learnjavascript/
+Learn programming
+https://www.reddit.com/r/learnprogramming/
+Learn Python
+https://www.reddit.com/r/learnpython/
+Python
+https://www.reddit.com/r/Python/
+React
+https://www.reddit.com/r/reactjs/
+Web Design
+https://www.reddit.com/r/web_design/
+Web Dev
+https://www.reddit.com/r/webdev/
+Web Development Tutorials
+https://www.reddit.com/r/WebdevTutorials/
